@@ -1,11 +1,12 @@
 def solution(arr):
-    def f(n):
-        if n < 50 and n % 2 == 1:
-            return n * 2;
-        elif n >= 50 and n % 2 == 0:
-            return n / 2;
-        else:
-            return n;
+    answer = [];
     
-    answer = list(map(f, arr))
+    for n in arr:
+        if n < 50 and n % 2 == 1:
+            answer.append(n * 2)
+        elif n >= 50 and n % 2 == 0:
+            answer.append(n / 2)
+        else:
+            answer.append(n)
+    
     return answer
