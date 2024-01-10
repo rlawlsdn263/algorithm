@@ -1,2 +1,7 @@
 def solution(my_string, overwrite_string, s):
-    return my_string[:s] + overwrite_string + my_string[s + len(overwrite_string):]
+    start = my_string[:s]
+    overwrite = overwrite_string
+    end = my_string[s + len(overwrite_string):]
+    
+    return f'{start}{overwrite}{end}'
+
