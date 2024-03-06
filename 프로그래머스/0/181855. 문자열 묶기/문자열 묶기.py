@@ -1,4 +1,7 @@
 def solution(strArr):
-    a=[0]*31
-    for x in strArr: a[len(x)]+=1
-    return max(a)
+    d = {}
+
+    for i in strArr:
+        d[len(i)] = d.get(len(i), 0) + 1
+
+    return max(d.values())
