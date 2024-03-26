@@ -1,11 +1,12 @@
 def solution(arr, n):
-    if len(arr) % 2 == 0:
-        for i, a in enumerate(arr):
-            if i % 2 == 1:
-                arr[i] += n
-    else:
-        for i, a in enumerate(arr):
-            if i % 2 == 0:
-                arr[i] += n
-                
+    # Check if the array's length is odd or even
+    if len(arr) % 2:  # Odd
+        indices = range(0, len(arr), 2)
+    else:  # Even
+        indices = range(1, len(arr), 2)
+    
+    # Add n to the specified elements
+    for i in indices:
+        arr[i] += n
+    
     return arr
