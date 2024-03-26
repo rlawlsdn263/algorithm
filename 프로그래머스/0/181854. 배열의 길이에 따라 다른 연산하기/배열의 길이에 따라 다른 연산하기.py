@@ -1,10 +1,11 @@
 def solution(arr, n):
-    if len(arr) % 2:
-        for i in range(len(arr)):
-            if i % 2 == 0:
-                arr[i] = arr[i] + n
+    if len(arr) % 2 == 0:
+        for i, a in enumerate(arr):
+            if i % 2 == 1:
+                arr[i] += n
     else:
-         for i in range(len(arr)):
-            if i % 2 != 0:
-                arr[i] = arr[i] + n
+        for i, a in enumerate(arr):
+            if i % 2 == 0:
+                arr[i] += n
+                
     return arr
