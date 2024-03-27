@@ -1,6 +1,6 @@
 # [level 1] 이상한 문자 만들기 - 12930 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12930) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12930?itm_content=course14743) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 03월 26일 10:31:11
+2024년 03월 28일 00:42:18
 
 ### 문제 설명
 
